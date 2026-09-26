@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 4. Contact Form Handler (Direct Mailto with feedback)
+    // 4. Contact Form Handler (Direct Gmail Compose)
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
@@ -83,15 +83,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            const mailtoUrl = `mailto:sumitkingkohlisk@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(
-                `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-            )}`;
+            const subject = `Portfolio Message from ${name}`;
+            const body = `Hi Sumit,\n\n${message}\n\nFrom: ${name} (${email})`;
 
-            showToast('Opening your email client...');
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=sumitkingkohlisk@gmail.com&su=${encodeURIComponent(
+                subject
+            )}&body=${encodeURIComponent(body)}`;
+
+            showToast('Opening Gmail...');
             setTimeout(() => {
-                window.location.href = mailtoUrl;
+                window.open(gmailUrl, '_blank', 'noopener,noreferrer');
                 contactForm.reset();
-            }, 600);
+            }, 400);
         });
     }
 });

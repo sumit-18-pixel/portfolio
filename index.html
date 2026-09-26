@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumit Kohli — Web Developer</title>
+    <meta name="description" content="Personal portfolio of Sumit Kohli — beginner web developer learning HTML, CSS, and JavaScript.">
+
+    <!-- Clean, Fast Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Sumit Kohli</a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <a href="#contact" class="btn btn-sm btn-primary">Contact Me</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-avatar fade-in">
+                <img src="samurai.jpg" alt="Sumit Kohli Profile">
+            </div>
+
+            <div class="hero-text fade-in">
+                <span class="badge">Web Development Student</span>
+                <h1>Hi, I'm <span class="highlight">Sumit Kohli</span> 👋</h1>
+                <h2>Building websites with HTML, CSS & JavaScript.</h2>
+                <p>
+                    I'm a beginner developer passionate about technology and learning how to create clean, responsive, and functional web applications from scratch.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">ABOUT ME</span>
+                <h2>Who I Am</h2>
+            </div>
+
+            <div class="about-content fade-in">
+                <div class="about-text-card">
+                    <p>
+                        Hello! My name is <strong>Sumit Kohli</strong>. I am an enthusiastic beginner on a journey to master frontend web development.
+                    </p>
+                    <p>
+                        I enjoy understanding how websites work under the hood—from structuring content with clean HTML, styling visually appealing interfaces with CSS, to implementing interactivity and dynamic behavior with JavaScript.
+                    </p>
+                    <p>
+                        This portfolio is a showcase of what I'm learning, the small projects I've built, and my progress as I continue to practice and build every day.
+                    </p>
+                </div>
+
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🎯</span>
+                        <div>
+                            <h4>Focused Learning</h4>
+                            <p>Mastering core web fundamentals before moving to complex frameworks.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">💻</span>
+                        <div>
+                            <h4>Hands-on Practice</h4>
+                            <p>Building real mini-projects like calculators, tools, and responsive layouts.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🚀</span>
+                        <div>
+                            <h4>Consistency</h4>
+                            <p>Writing and refining code daily to become a confident web developer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-darker">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">MY SKILLS</span>
+                <h2>What I Work With</h2>
+                <p class="section-desc">The core technologies I am actively learning and using to build web projects.</p>
+            </div>
+
+            <div class="skills-grid fade-in">
+
+                <!-- HTML Card -->
+                <div class="skill-card">
+                    <div class="skill-icon">🧱</div>
+                    <h3>HTML5</h3>
+                    <p>
+                        Writing clean, semantic, and well-structured markup. Understanding elements, forms, links, media, and document accessibility.
+                    </p>
+                    <div class="skill-tags">
+                        <span>Semantic Tags</span>
+                        <span>Forms & Inputs</span>
+                        <span>SEO Basics</span>
+                    </div>
+                </div>
+
+                <!-- CSS Card -->
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>CSS3</h3>
+                    <p>
+                        Styling modern web layouts with Flexbox and CSS Grid. Creating responsive designs that look great on desktop, tablet, and mobile screens.
+                    </p>
+                    <div class="skill-tags">
+                        <span>Flexbox & Grid</span>
+                        <span>Responsive Design</span>
+                        <span>Transitions</span>
+                    </div>
+                </div>
+
+                <!-- JavaScript Card -->
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>JavaScript</h3>
+                    <p>
+                        Adding logic and interactivity to web pages. Handling DOM manipulation, user events, functions, arrays, and basic algorithmic problem-solving.
+                    </p>
+                    <div class="skill-tags">
+                        <span>DOM Manipulation</span>
+                        <span>Event Listeners</span>
+                        <span>ES6 Basics</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">PORTFOLIO</span>
+                <h2>Featured Projects</h2>
+                <p class="section-desc">Three beginner-friendly applications built with vanilla HTML, CSS, and JavaScript.</p>
+            </div>
+
+            <div class="projects-grid fade-in">
+
+                <!-- Project 1: Calculator -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">🧮</span>
+                        <div class="project-actions">
+                            <span class="badge-tech">HTML</span>
+                            <span class="badge-tech">CSS</span>
+                            <span class="badge-tech">JS</span>
+                        </div>
+                    </div>
+                    <h3>Calculator App</h3>
+                    <p>
+                        A clean and responsive JavaScript calculator that performs standard arithmetic operations (addition, subtraction, multiplication, and division) with keyboard and click support.
+                    </p>
+                    <div class="project-footer">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn">
+                            GitHub Code ↗
+                        </a>
+                        <a href="#contact" class="project-btn project-btn-accent">
+                            Live Demo ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: ATM Simulator -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">🏧</span>
+                        <div class="project-actions">
+                            <span class="badge-tech">HTML</span>
+                            <span class="badge-tech">CSS</span>
+                            <span class="badge-tech">JS</span>
+                        </div>
+                    </div>
+                    <h3>ATM Simulator</h3>
+                    <p>
+                        A simulated automated teller machine interface allowing users to check balance, deposit money, and withdraw funds with input validation and real-time transaction updates.
+                    </p>
+                    <div class="project-footer">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn">
+                            GitHub Code ↗
+                        </a>
+                        <a href="#contact" class="project-btn project-btn-accent">
+                            Live Demo ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Jarvis AI -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">🤖</span>
+                        <div class="project-actions">
+                            <span class="badge-tech">HTML</span>
+                            <span class="badge-tech">CSS</span>
+                            <span class="badge-tech">JS</span>
+                        </div>
+                    </div>
+                    <h3>Jarvis AI Assistant</h3>
+                    <p>
+                        A simple voice and text-based JavaScript assistant that answers basic user queries, tells the time, opens popular websites, and responds to predefined voice commands.
+                    </p>
+                    <div class="project-footer">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn">
+                            GitHub Code ↗
+                        </a>
+                        <a href="#contact" class="project-btn project-btn-accent">
+                            Live Demo ↗
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience / Learning Journey Section -->
+    <section id="experience" class="section section-darker">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">TIMELINE</span>
+                <h2>Learning Journey</h2>
+                <p class="section-desc">The key milestones of my self-taught web development path.</p>
+            </div>
+
+            <div class="timeline-list fade-in">
+
+                <div class="timeline-item">
+                    <div class="timeline-num">01</div>
+                    <div class="timeline-content">
+                        <h3>HTML & Web Foundations</h3>
+                        <span class="timeline-date">Phase 1</span>
+                        <p>
+                            Learned how the web works, browser rendering, semantic HTML tags, creating structured forms, and linking assets.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-num">02</div>
+                    <div class="timeline-content">
+                        <h3>CSS & Responsive Layouts</h3>
+                        <span class="timeline-date">Phase 2</span>
+                        <p>
+                            Mastered the CSS box model, Flexbox alignment, CSS Grid, media queries for mobile devices, and dark mode themes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-num">03</div>
+                    <div class="timeline-content">
+                        <h3>JavaScript & DOM Logic</h3>
+                        <span class="timeline-date">Phase 3</span>
+                        <p>
+                            Learned core JavaScript syntax, variables, loops, conditional logic, DOM selection, and event-driven programming.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-num">04</div>
+                    <div class="timeline-content">
+                        <h3>Building Mini-Apps & Portfolio</h3>
+                        <span class="timeline-date">Current Focus</span>
+                        <p>
+                            Developing practical beginner apps like the Calculator, ATM simulator, and Jarvis AI, while polishing this portfolio.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">GET IN TOUCH</span>
+                <h2>Let's Connect</h2>
+                <p class="section-desc">Have a question or want to collaborate? Feel free to reach out!</p>
+            </div>
+
+            <div class="contact-wrapper fade-in">
+                
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>
+                        I'm currently looking for beginner opportunities, collaborations, or feedback on my projects. You can email me directly anytime.
+                    </p>
+
+                    <div class="email-box">
+                        <span class="email-label">EMAIL ME DIRECTLY</span>
+                        <div class="email-row">
+                            <a href="mailto:sumitkingkohlisk@gmail.com" class="email-link">
+                                sumitkingkohlisk@gmail.com
+                            </a>
+                            <button id="copy-email-btn" class="btn btn-sm btn-outline" type="button">
+                                Copy Email
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="form-name">Your Name</label>
+                            <input type="text" id="form-name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email">Your Email</label>
+                            <input type="email" id="form-email" required placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" rows="4" required placeholder="Write your message here..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>© 2026 Sumit Kohli. Built with HTML, CSS & JavaScript.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple Toast Notification -->
+    <div id="toast" class="toast" role="alert"></div>
+
+    <!-- Main JavaScript Script -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
